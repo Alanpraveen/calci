@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+             box-shadow: burlywood;
+            background-color:cyan;
+            border-radius:50px ;
+            margin:300px;text-align: center;
+            height:300px;
+            width: 500px;
+            border: 5px solid black;
+            padding :50px;
+            
+        }
+        .h1{
+            border:20px solid black;
+            border-radius: 200px;
+            border-style:groove;
+            
+            background-color: beige;
+            text-align:top;
+            margin-left: 80px;
+            margin-top:0px ;
+            height: 50px;
+            bottom: 20px;
+            width: 300px;
+           
+
+        }
+        .h2{
+            border-radius: 100px;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+        }
+        .h3{
+            border-radius: 100px;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+        }
+        .h4{
+            border-radius:50px; 
+            height: 30px;
+            width: 50px;
+            text-align: center;
+        }
+        .h5{
+            border-radius: 50px;
+            height: 30px;
+            width: 50px;
+            text-align: center;
+        }
+        .h6{
+            border-radius: 50px;
+            height: 30px;
+            width: 50px;
+            text-align: center;
+        }
+        .h7{
+            border-radius: 50px;
+            height: 30px;
+            width: 50px;
+            text-align: center;
+        }
+        .h8{
+            border-radius: 100px;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="box">
+        
+    <h1 class="h1"><b>calculator</b></h1>
+   
+    <input class="h2"id="i1"type="number" placeholder="num1">
+    <input class="h3"id="i2"type="number" placeholder="num2">
+    <br>
+    <br>
+    <button class="h4" onclick="add()"><b>+</b></button>
+    <button class="h5" onclick="sub()"><b>-</b></button>
+    <button class="h6" onclick="mult()"><b>*</b></button>
+    <button class="h7" onclick="div()"><b>/</b></button>
+    <br>
+    <br>
+    <input class="h8" id="r1" type="number" placeholder="result">
+    </div>
+    <script>
+        function add(){
+          let num1=Number(document.getElementById('i1').value);  
+          
+          let num2=Number(document.getElementById('i2').value);
+          let result=num1+num2;
+          document.getElementById('r1').value=result;
+        }
+        function div(){
+          let num1=Number(document.getElementById('i1').value);  
+          
+          let num2=Number(document.getElementById('i2').value);
+          let result=num1/num2;
+          document.getElementById('r1').value=result;
+        }
+        function sub(){
+          let num1=Number(document.getElementById('i1').value);  
+          
+          let num2=Number(document.getElementById('i2').value);
+          let result=num1-num2;
+          document.getElementById('r1').value=result;
+        }
+        function mult(){
+          let num1=Number(document.getElementById('i1').value);  
+          
+          let num2=Number(document.getElementById('i2').value);
+          let result=num1*num2;
+          document.getElementById('r1').value=result;
+        }
+    </script>
+</body>
+</html>
